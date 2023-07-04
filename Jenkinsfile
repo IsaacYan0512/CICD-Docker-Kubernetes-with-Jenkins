@@ -15,9 +15,7 @@ pipeline {
 
         stage('BUILD'){
             steps {
-                container ('vprofileapp'){
-                sh 'mvn version'
-                }
+                sh 'mvn clean install -DskipTests'
             }
             post {
                 success {
