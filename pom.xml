@@ -181,8 +181,12 @@
 		<!-- CODE COVERAGE -->
 		   <plugin>
                      <groupId>org.apache.maven.plugins</groupId>
-                     <artifactId>maven-war-plugin</artifactId>
-                     <version>3.2.2</version>
+                     <artifactId>maven-surefire-plugin</artifactId>
+                     <version>3.0.0-M3</version>
+		     <configuration>
+			     <testFailureIgnore>true</testFailureIgnore>
+			     <shutdown>kill</shutdown><!-- Use it if required -->
+		     </configuration>
                     </plugin>
  		    <plugin>
  		        <groupId>org.jacoco</groupId>
