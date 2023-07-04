@@ -7,7 +7,7 @@ pipeline {
     }
 */
     environment {
-        registry = "isaac3687/vprofileapp:V1"
+        registry = "isaac3687/vprofileapp:latest"
         registryCredential = 'dockerhub'
     }
 
